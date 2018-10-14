@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_config"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.edu.swufe.team_config_rate.ConfigActivity">
+
+
+    <EditText
+        android:id="@+id/dollar_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="DOLLAR"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/euro_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="EURO"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/won_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="WON"
+        android:inputType="numberDecimal" />
+    <Button
+        android:text="@string/btn_save_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="save"
+        android:id="@+id/btn_save" />
+</LinearLayout>

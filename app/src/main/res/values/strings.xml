@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">shulin_app</string>
+    <string name="btn_label">Button</string>
+    <string name="btn_dollar_label">Dollar</string>
+    <string name="btn_euro_label">Euro</string>
+    <string name="btn_won_label">Won</string>
+    <string name="rmb_hint_label">Input RMB</string>
+    <string name="btn_save_label">save</string>
+    <string name="btn_opencfg_label">openConfig</string>
+    <string name="menu_set_label">setting</string>
+    <string name="teama">TeamA</string>
+    <string name="teamb">TeamB</string>
+    <string name="empty">0</string>
+    <string name="s1">+1 POINTS</string>
+    <string name="s2">+2 POINTS</string>
+    <string name="s3">+3 POINTS</string>
+    <string name="free">FREE THROW</string>
+    <string name="reset">RESET</string>
+</resources>
