@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyListActivity">
+    //可以换成多栏显示，可以设置列数androdnumcolumns="auto_fit"-with=100dp numcolumns=3
+    <ListView
+        android:id="@+id/myList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+    <!--<GridView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:numColumns="auto_fit"-->
+        <!--android:columnWidth="100dp"-->
+        <!--android:id="@+id/myList"-->
+        <!--&gt;-->
+    <!--</GridView>-->
+    <!--没有数据时用来显示的空间-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/remind_info"
+        android:id="@+id/nodata"
+        />
+
+</RelativeLayout>

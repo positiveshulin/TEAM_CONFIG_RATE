@@ -16,4 +16,8 @@
     <string name="s3">+3 POINTS</string>
     <string name="free">FREE THROW</string>
     <string name="reset">RESET</string>
+    <string name="label_open_list">OpenList</string>
+    <string name="remind_info">no data</string>
+    <string name="reassure_info">温馨提示</string>
+    <string name="reassure_content">确定要删除选中汇率数据吗？</string>
 </resources>

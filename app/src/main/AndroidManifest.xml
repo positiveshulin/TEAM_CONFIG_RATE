@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.edu.swufe.team_config_rate">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +20,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".ConfigActivity" />
-        <activity android:name=".TeamActivity"></activity>
+        <activity android:name=".TeamActivity" />
+        <activity android:name=".RateListActivity" />
+        <activity android:name=".MyListActivity" android:screenOrientation="landscape" />
+        <activity android:name=".MyList2Activity" />
+        <activity android:name=".RateCalcActivity" ></activity>
     </application>
 
 </manifest>
