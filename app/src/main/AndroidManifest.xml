@@ -18,13 +18,27 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            //启动项可以有多个，可以直接程序右键点击运行
         </activity>
         <activity android:name=".ConfigActivity" />
         <activity android:name=".TeamActivity" />
         <activity android:name=".RateListActivity" />
-        <activity android:name=".MyListActivity" android:screenOrientation="landscape" />
-        <activity android:name=".MyList2Activity" />
-        <activity android:name=".RateCalcActivity" ></activity>
+        <activity android:name=".MyListActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+       </activity>
+        <activity android:name=".MyList2Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RateCalcActivity"></activity>
+        <!--android:theme="@style/Base.Theme.AppCompat.Light.Dialog"-->//以对话框形式呈现
     </application>
 
 </manifest>

@@ -30,9 +30,8 @@ import java.util.List;
 public class MyList2Activity extends ListActivity implements Runnable,AdapterView.OnItemClickListener ,AdapterView.OnItemLongClickListener{
     private String TAG="mylist2";
     Handler handler;
-    private ArrayList<HashMap<String, String>> listItems; // 用于初始化的数据，要用显示列表汉的
+    private List<HashMap<String, String>> listItems; // 用于初始化的数据，要用显示列表汉的
     private SimpleAdapter listItemAdapter; // 适配器
-    private List<HashMap<String, String>> list1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +49,8 @@ public class MyList2Activity extends ListActivity implements Runnable,AdapterVie
             @Override
             public void handleMessage(Message msg) {
                 if(msg.what == 7){
-                   list1 = (List<HashMap<String, String>>)msg.obj;
-                            listItemAdapter = new SimpleAdapter(MyList2Activity.this, list1,
+                   listItems = (List<HashMap<String, String>>)msg.obj;
+                            listItemAdapter = new SimpleAdapter(MyList2Activity.this, listItems,
                             R.layout.list_item, // ListItem的XML布局实现
                             new String[] { "ItemTitle", "ItemDetail" },
                             new int[] { R.id.itemTitle, R.id.itemDetail });
@@ -144,14 +143,14 @@ public class MyList2Activity extends ListActivity implements Runnable,AdapterVie
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
         Log.i(TAG, "onItemLongClick: long is running and position="+position);
-
+       //构造对话框进行删除数据的确认操作
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
         builder.setTitle("温馨提示")
                 .setMessage("确定要删除选中汇率数据吗？")
                 .setPositiveButton("是", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        list1.remove(position);//删除对应position的数据
+                        listItems.remove(position);//删除对应position的数据
                         listItemAdapter.notifyDataSetChanged();
                     }
                 }
